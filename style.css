@@ -8,12 +8,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 #clockContainer {
   position: relative;
-  width: 440px;
-  height: 440px;
+  width: 40vw;
+  height: 40vw;
   background: url(clock.png) no-repeat center center/cover;
   /* border: 1px solid red; */
 }
@@ -50,9 +49,10 @@ body {
 }
 
 footer {
-  border: 1px solid black;
-  margin-top: 3%;
+  /* border: 3px solid yellow;  */
+  margin-top: 2%;
   border-radius: 5px;
+  margin-bottom: 2%;
 }
 .copyright {
   padding: 10px;
@@ -66,4 +66,15 @@ footer {
 a:hover {
   text-decoration: underline;
   color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    /* background-color: aquamarine; */
+    height: 100vh;
+  }
+
+  footer {
+    margin-bottom: 0;
+  }
 }
